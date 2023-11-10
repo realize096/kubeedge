@@ -8,7 +8,7 @@ RUN CGO_ENABLED=0 GO111MODULE=off go build -v -o /usr/local/bin/iptables-manager
     github.com/kubeedge/kubeedge/cloud/cmd/iptablesmanager
 
 
-FROM alpine:3.17
+FROM alpine:3.18.3
 
 COPY --from=builder /usr/local/bin/iptables-manager /usr/local/bin/iptables-manager
 
