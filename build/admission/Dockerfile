@@ -8,7 +8,7 @@ RUN CGO_ENABLED=0 GO111MODULE=off go build -v -o /usr/local/bin/admission -ldfla
 github.com/kubeedge/kubeedge/cloud/cmd/admission
 
 
-FROM alpine:3.17
+FROM alpine:3.18.6
 
 COPY --from=builder /usr/local/bin/admission /usr/local/bin/admission
 
