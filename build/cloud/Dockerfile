@@ -8,7 +8,7 @@ RUN CGO_ENABLED=0 GO111MODULE=off go build -v -o /usr/local/bin/cloudcore -ldfla
     github.com/kubeedge/kubeedge/cloud/cmd/cloudcore
 
 
-FROM alpine:3.17
+FROM alpine:3
 
 COPY --from=builder /usr/local/bin/cloudcore /usr/local/bin/cloudcore
 
