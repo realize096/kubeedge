@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 RUN echo '#!/bin/bash' > /infinite.sh
 RUN echo 'while /bin/true' >> /infinite.sh
 RUN echo 'do' >> /infinite.sh
